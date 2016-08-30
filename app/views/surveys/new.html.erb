@@ -1,0 +1,63 @@
+<h1>New Survey</h1>
+<%= form_for :survey, url: surveys_path do |f| %>
+  <p>
+    <%= f.label :name, "Your Name" %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :number, "Your phone Number" %><br>
+    <%= f.text_field :number %>
+  </p>
+  <p>
+    <%= f.label :question1, " 1: Haga una lista de los problemas de tecnología que son obstáculos para su éxito ." %><br>
+    <%= f.text_field :question1 %>
+  </p> 
+  <p>
+    <%= f.label :question2, "2: ¿Cuál es el problema más importante ?" %><br>
+    <%= f.text_field :question2 %>
+  </p> 
+  <p>
+    <%= f.label :question3, "3: ¿Qué problemas le están costando dinero, el éxito o la felicidad ?" %><br>
+    <%= f.text_field :question3 %>
+  </p>  
+  <p>
+    <%= f.label :question4, "4: ¿Qué habilidades de la tecnología ¿siente que necesita para ser más exitoso o feliz?" %><br>
+    <%= f.text_field :question4 %>
+  </p>  
+  <p>
+    <%= f.label :question5, "5: Enumerar los seminarios que ha asistido recientemente." %><br>
+    <%= f.text_field :question5 %>
+  </p>  
+  <p>
+    <%= f.label :question6, "6: En una escala de 1 a 10 lo calificaría sus capacidades cuando se trata de la tecnología ?" %><br>
+    <%= f.text_field :question6 %>
+  </p> 
+  <p>
+    <%= f.label :question7, "7: ¿Qué dispositivo específico le gustaría aprender a utilizar mejor?" %><br>
+    <%= f.text_field :question7 %>
+  </p> 
+  <p>
+    <%= f.label :question8, "8: ¿Qué habilidades de tecnología específica le gustaría mejorar?" %><br>
+    <%= f.text_field :question8 %>
+  </p> 
+  <p>
+    <%= f.label :question9, "9: ¿Qué consideras que es la cosa más valiosa acerca de la tecnología ?" %><br>
+    <%= f.text_field :question9 %>
+  </p> 
+  <p>
+    <%= f.label :question10, "10: ¿Cuál es el mejor libro o recurso que haya leído en la tecnología ?" %><br>
+    <%= f.text_field :question10 %>
+  </p> 
+  <p>
+    <%= f.label :question11, "11: ¿Por cual información estaría dispuesto a pagar par obtener la?"%><br>
+    <%= f.text_field :question11 %>
+  </p> 
+  <p>
+    <%= f.label :question12, "12: ¿En Qué pieza de tecnología es lo que pasa la mayor parte de su tiempo ?" %><br>
+    <%= f.text_field :question12 %>
+  </p> 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
